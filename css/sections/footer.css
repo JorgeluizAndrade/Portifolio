@@ -1,0 +1,9 @@
+.footer{
+    text-align: center;
+    background-color: #222;
+    padding: 20px 30px ;
+}
+
+.footer h2{
+    color: var(--branco);
+}

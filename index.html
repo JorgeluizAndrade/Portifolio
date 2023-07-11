@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sections/header.css">
+    <link rel="stylesheet" href="css/sections/habilidades.css">
+    <link rel="stylesheet" href="css/sections/home.css">
+    <link rel="stylesheet" href="css/sections/projetos.css">
+    <link rel="stylesheet" href="css/sections/contatos.css">
+    <link rel="stylesheet" href="css/sections/footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Portifolio jorge</title>
+  </head>
+  <body>
+    <nav class="header__nav" data-aos="fade-down" id="home">
+        <h4>Jorge</h4>
+      <ul class="header__menu">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#habilidades">Habilidades</a>
+        </li>
+        <li>
+          <a href="#projetos">Projetos</a>
+        </li>
+        <li>
+          <a href="#contatos">Contatos</a>
+        </li>
+      </ul>
+      <ul class="header__menu-mobile" id="mobileMenu" data-aos="fade-down">
+        <li>
+          <img src="assets/menu.svg" alt="menu" onclick="toggleMobileMenu()" />
+        </li>
+      <ul class="header__menu-mobile-list">
+        <li>
+          <a href="#home" onclick="closeMobileMenu()">Home</a>
+        </li>
+        <li>
+          <a href="#habilidades" onclick="closeMobileMenu()">Habilidades</a>
+        </li>
+        <li>
+          <a href="#projetos" onclick="closeMobileMenu()">Projetos</a>
+        </li>
+        <li>
+          <a href="#contatos" onclick="closeMobileMenu()">Contatos</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="home" id="home">
+      <div class="apresentacao">
+        <h1><span class="digitacao">Oi, eu sou Jorge Luiz, Desenvolvedor Front-end</span></h1>
+        <p>
+          Sou um desenvolvedor front-end apaixonado por programação, com vasta experiência em projetos. Estou animado para compartilhar minhas habilidades e conquistas aqui no meu portfólio.
+        </p>
+        <p>
+          Decidi iniciar minha carreira como desenvolvedor front-end, pois essa área me permite explorar minha criatividade e, principalmente, porque adoro programar em JavaScript.
+        </p>
+      </div>
+      <div>
+        <a href="curriculo/Currículo Jorge Luiz A. Souza.pdf" download class="btn-saiba-mais">Baixar Currículo</a>
+      </div>
+    </section>
+    
+  </header>
+  <section class="habilidades" id="habilidades">
+    <div class="habilidades-texto">
+        <h2>Minhas Habilidades</h2>
+    </div>
+    <div class="content">
+        <div class="habilidades-box">
+            <img src="assets/icons8-html-5.svg" alt="Ícone do HTML">
+            <h3>HTML</h3>
+        </div>
+        <div class="habilidades-box">
+            <img src="assets/file_type_css_icon_130661.svg" alt="Ícone do CSS">
+            <h3>CSS</h3>
+        </div>
+        <div class="habilidades-box">
+            <img src="assets/javascript_icon_130900.svg" alt="Ícone do JavaScript">
+            <h3>JavaScript</h3>
+        </div>
+        <div class="habilidades-box">
+            <img src="assets/file-type-reactjs.svg" alt="Ícone do Reactjs">
+            <h3>Reactjs</h3>
+        </div>
+        <div class="habilidades-box">
+          <img src="assets/file-type-jest.svg" alt="Ícone do Jest">
+          <h3>Jest</h3>
+      </div>
+      <div class="habilidades-box">
+        <img src="assets/testing-library.svg" alt="Ícone do Testing Library">
+        <h3>Testing Library</h3>
+    </div>
+    <div class="habilidades-box">
+      <img src="assets/file-type-tailwind.svg" alt="Ícone do Testing Tailwind">
+      <h3>Tailwind</h3>
+    </div>
+    <div class="habilidades-box">
+      <img src="assets/materialui.svg" alt="Ícone do Material Ui">
+      <h3>Material Ui</h3>
+    </div>
+    <div class="habilidades-box">
+      <img src="assets/git.svg" alt="Ícone do Git">
+      <h3>Git</h3>
+    </div>
+  </div>
+</section>
+
+<section class="projetos" id="projetos">
+  <div class="projetos-texto">
+    <h2>Meus Projetos</h2>
+  </div>
+  <div class="content">
+    <div class="projeto">
+      <img src="assets/Captura de tela 2023-06-15 144745.png" alt="Projeto 1">
+      <div class="projeto-descricao">
+        <h3>GYM!</h3>
+        <p>GYM! É um site feito com Reactjs consumindo a api(disponivel no site Rapidapi) e também usando Material Ui.</p>
+        <div class="projeto-botoes">
+          <a href="https://github.com/JorgeluizAndrade/gym" target="_blank">Repositório</a>
+          <a href="https://gym-orcin.vercel.app/" target="_blank">Deploy</a>
+        </div>
+      </div>
+    </div>
+    <div class="projeto">
+      <img src="assets/ADMIN.png" alt="Projeto 2">
+      <div class="projeto-descricao">
+        <h3>Admin</h3>
+        <p> Admin é um projeto feito com Reactjs usando Meterial Ui e plugins(DayGrid, Prosidebar e Nivo Charts).</p>
+        <div class="projeto-botoes">
+          <a href="https://github.com/JorgeluizAndrade/Admin" target="_blank">Repositório</a>
+          <a href="https://admin-orcin-nu.vercel.app/" target="_blank">Deploy</a>
+        </div>
+      </div>
+    </div>
+    <div class="projeto">
+      <img src="assets/Captura de tela 2023-07-01 105035_waifu2x_noise0_scale2x.png" alt="Projeto 3">
+      <div class="projeto-descricao">
+        <h3>Sushifood</h3>
+        <p>Sushifood é um Projeto feito com Html, Css e JavaScript usando a ferramenta de construção Vitejs.</p>
+        <div class="projeto-botoes">
+          <a href="https://github.com/JorgeluizAndrade/Sushi-Food" target="_blank">Repositório</a>
+          <a href="https://sushi-food-smoky.vercel.app/" target="_blank">Deploy</a>
+        </div>
+      </div>
+    </div>
+    <div class="projeto">
+      <img src="assets/images.png" alt="Projeto 4">
+      <div class="projeto-descricao">
+        <h3>EM BREVE...</h3>
+        <p>SPOILER: Trapstar Music</p>
+        <div class="projeto-botoes">
+          <a href="#" target="_blank">Repositório</a>
+          <a href="#" target="_blank">Deploy</a>
+        </div>
+      </div>
+    </div>
+    <!-- projetos aqui -->
+  </div>
+</section>
+<section class="contatos" id="contatos">
+  <div class="contatos-texto">
+    <h2>Entre em Contato</h2>
+    <p>Ficarei feliz em conversar com você. Entre em contato por meio dos seguintes canais:</p>
+  </div>
+  <div class="contatos-info">
+    <div class="contato">
+      <img src="assets/google-gmail.svg" alt="Email Icon">
+      <a href="mailto:luizj1718@gmail.com">luizj1718@gmail.com</a>
+    </div>
+    <div class="contato">
+      <img src="assets/phone.svg" alt="Phone Icon">
+      <a href="tel:+5521983452662">21983452662</a>
+    </div>
+    <div class="contato">
+      <img src="assets/linkedin.svg" alt="LinkedIn Icon">
+      <a href="https://www.linkedin.com/in/jorge-andradesouza/">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <h2>&copy; Jorge Luiz A. Souza</h2>
+</footer>
+    <script src="js/main.js" type="module"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/menuMobile.js"></script>
+  </body>
+</html>

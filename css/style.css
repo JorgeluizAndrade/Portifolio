@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+:root {
+  --branco: #fff;
+  --preto: #0d0d0d;
+}
+
+body {
+  background-color: var(--preto);
+  height: 100vh;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#habilidades,#projetos,#contatos{
+  position: relative;
+  padding: 120px 100px;
+  min-height: 110vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+@media (max-width: 768px) {
+  #habilidades,#projetos,#contatos{
+    min-height: 80vh;
+  }
+}

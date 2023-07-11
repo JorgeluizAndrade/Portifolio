@@ -1,0 +1,124 @@
+.home {
+    max-width: 1000px;
+    min-height: 100vh;
+    padding-top: 9em;
+    margin-left: 0;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+    right: 5em;
+    transform: translateY(-50%);
+    z-index: 10;
+    position: relative;
+    padding: 120px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .digitacao::after{
+    content: '|';   
+    animation: pisca .7s infinite;
+    opacity: 1;
+    margin-bottom: 5px;
+  }
+
+  @keyframes pisca{
+      0%, 100%{
+        opacity: 1;
+      }
+      50%{
+        opacity: 0;
+      }
+  }
+  
+  .apresentacao {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1000px;
+  }
+  
+
+  .home h1 {
+    position: relative;
+    color: var(--branco);
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .home p {
+    position: relative;
+    font-size: 20px;
+    color: var(--branco);
+  }
+  
+  .btn-saiba-mais {
+    text-decoration: none;
+    background-color: #ddd;
+    color: var(--preto);
+    line-height: 35px;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-saiba-mais:hover {
+    background-color: #ccc;
+  }
+  
+  .home div {
+    margin-top: 1em;
+  }
+
+  @media (max-width: 768px) {
+    .home {
+      padding-top: 10em;
+    }
+  
+    .apresentacao h1 {
+      font-size: 28px;
+    }
+  
+    .apresentacao p {
+      font-size: 16px;
+    }
+  
+    .btn-saiba-mais {
+      font-size: 14px;
+      padding: 0.8em 1.6em;
+    }
+  }
+
+
+  @media (max-width: 500px){
+    .home {
+      padding: 5em;
+      padding-bottom: 15em;
+      margin-left: 1em;
+    }
+  
+    .home h1 {
+      font-size: 20px;
+    }
+  
+    .home p {
+      font-size: 13px;
+    }
+
+    .btn-saiba-mais {
+      text-decoration: none;
+      background-color: #ddd;
+      color: var(--preto);
+      line-height: 35px;
+      outline: none;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 14px;
+      transition: background-color 0.3s ease-in-out;
+    }
+  }
