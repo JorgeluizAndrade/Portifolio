@@ -1,138 +1,116 @@
-.header__nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-    z-index: 1000;
-    width: 100%;
-    position: fixed;
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
 }
 
-.header__nav h4{
-    padding: 30px;
-    color: var(--branco);
-    font-weight: 700;
-    font-size: 24px;
-    text-transform: uppercase;
-    cursor: pointer;
-    opacity: 0.5;
+.header__nav h4 {
+  padding: 30px;
+  color: var(--branco);
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0.5;
 }
 
-.header__menu, .header__menu-mobile{
-    padding: 20px;
-    flex: 1.236;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 64px;
-    list-style: none;
+.header__menu,
+.header__menu-mobile {
+  padding: 20px;
+  flex: 1.236;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 64px;
+  list-style: none;
 }
 
-.header__menu li a{
-    color: var(--branco);
-    font-size: 20px;
-    transition: 0.5s;
-    text-decoration: none;
+.header__menu li a {
+  color: var(--branco);
+  font-size: 20px;
+  transition: 0.5s;
+  text-decoration: none;
 }
 
-.header__menu li a:hover{
-    color: #777;
+.header__menu li a:hover {
+  color: #777;
 }
 
-.header__menu-mobile, .header__menu-mobile-list{
+.header__menu-mobile,
+.header__menu-mobile-list {
+  display: none;
+  gap: 20px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu {
     display: none;
-    gap: 20px;
-    position: relative;
+  }
+  .header__menu-mobile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .header__menu-mobile-list {
+    display: none;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    list-style-type: none;
+    z-index: 999;
+  }
+
+  .header__menu-mobile-list li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #mobileMenu li {
+    margin-bottom: 10px;
+  }
+};
+
+@media (max-width: 460px) {
+  .header__menu {
+    display: none;
+  }
+
+  .header__menu-mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__menu-mobile-list {
+    display: none;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    list-style-type: none;
+    z-index: 999;
+  }
+
+  .header__menu-mobile-list li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #mobileMenu li {
+    margin-bottom: 10px;
+  }
+
+
+  nav{
+    justify-content: space-between;
+    padding: 0 5vw;
+  }
+}
+.header__nav-active{
+  display: block;
 }
 
-@media screen and (max-width: 768px) {  
-    .header__menu {
-      display: none;
-    }
-
-    .header__menu-mobile-list.active{
-      display: block;
-    }
-
-    .header__menu-mobile {
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-    }
-    
-    .menu-icon {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 30px;
-      height: 20px;
-      cursor: pointer;
-    }
-      
-    .header__menu-mobile-list {
-      display: none;
-      top: 100%;
-      left: 0;
-      padding: 10px;
-      list-style-type: none;
-      z-index: 999
-    }
-
-    .header__menu-mobile-list li a{
-        color: #fff;
-        text-decoration: none;
-    } 
-    
-    
-    #mobileMenu li {
-      margin-bottom: 10px;
-    }
-    
-  }
-
-  
-  @media (max-width: 500px) {
-    .header__menu {
-      display: none;
-    }
-
-    .header__menu-mobile-list.active{
-      display: block;
-    }
-
-    .header__menu-mobile {
-      display: flex;
-      align-items: center;
-    }
-    
-    .menu-icon {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 30px;
-      height: 25px;
-      cursor: pointer;
-    }
-      
-    .header__menu-mobile-list {
-      display: none;
-      top: 100%;
-      left: 0;
-      padding: 10px;
-      list-style-type: none;
-      z-index: 999
-    }
-
-    .header__menu-mobile-list li a{
-        color: #fff;
-        text-decoration: none;
-    } 
-    
-    
-    #mobileMenu li {
-      margin-bottom: 10px;
-    }
-    
-  }
-
- 
